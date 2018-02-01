@@ -1,0 +1,18 @@
+/* página portfólio */
+.box{
+    margin-left: 0.2em;
+    margin-bottom: 0.4em;
+    padding: 10px;
+    border: 0.2em solid #320a27;
+    width: 40%;
+    height: 230px;
+    box-sizing: content-box;
+    display: inline-flex;
+    background-color: #fff5f5
+}
+.box:hover{
+    background-color: #ffd0d0
+}
+.portfolio-img{
+    width: 100%;
+}

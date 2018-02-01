@@ -1,0 +1,15 @@
+/* página sobre mim */
+.citacao{
+    background-color: #D9E5E3;
+    padding: 1em 2em;
+    margin: 0.8em;
+    border: 0.5em solid #C2CCCA;
+    border-left-color: rgb(209, 194, 194);
+    border-bottom-color: rgb(209, 194, 194);
+    box-sizing: border-box;
+    width: 35%;
+}
+cite{
+    font-style: italic;
+    float: right;
+}

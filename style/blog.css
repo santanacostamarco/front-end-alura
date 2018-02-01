@@ -1,0 +1,23 @@
+/* página blog */
+article.post{
+    border-bottom: 0.05rem solid #ccc;
+    margin-bottom: 2em;
+}
+.read-more{
+    background-color: #320a27;
+    color: #FFF;
+    padding: 0.6em;
+    text-decoration: none;
+    font-family: "Open Sans Condensed", sans-serif;
+}
+.post-footer a{
+    background-color: #320a27;
+    border-radius: 1em;
+    color: #FFF;
+    font-size: 0.7em;
+    text-decoration: none;
+    padding: 0 0.5em;
+    padding-bottom: 0.1em;
+    display: inline-block;
+    font-family: "Open Sans Condensed", sans-serif;
+}
