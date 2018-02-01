@@ -1,5 +1,7 @@
 .foto-home {
     height: 200px;
+    z-index: 100;
+    border-radius: 50% ;
 }
 .subtitulo-principal{
     font-family: "Open Sans Condensed", sans-serif;
@@ -25,6 +27,8 @@
 .saudacao em {
     color: #851944;
     font-size: 3em;
+    display: inline-block;
+    transform: rotate(-6deg) skew(-14deg);
 }
 .botao-index {
     text-transform: uppercase;
@@ -65,13 +69,28 @@
     display: block;
 }
 .blog {
+    position: relative;
     background-color: #999;
     color: #FFF;
     border-bottom: 10px solid #851944;
 }
+.blog li{
+    width: 30%;
+}
 .blog li a {
     color: #FCF;
     line-height: 3em;
+}
+.inicio-post{
+    background-color: #fff;
+    color: #000;
+    height: 6em;
+    padding: 1.3em;
+    font-size: 1.1em;
+    position: absolute;
+    top: 4.3em;
+    width: 45%;
+    left: 35%;
 }
 footer {
     padding: 1em 15%; 
@@ -90,49 +109,84 @@ main {
     position: absolute;
     font-family: "Shadows Into Light", cursive;
     font-weight: bold;
-    color: rgb(255, 221, 235);
+    letter-spacing: 0.2ch;
+    color: rgb(253, 220, 255);
 }
 .eficiencia{
-    top:12%;
+    top:20%;
     left: 75%;
+    transform: rotate(-5deg)
 }
 .javascript{
-    top:5%;
+    top:8%;
     left: 60%;
+    transform: rotate(-10deg)
 }
 .design{
-    top:22%;
+    top:30%;
     left: 63%;
+    transform: rotate(10deg);
 }
 .html5{
-    top:26%;
+    top:38%;
     left: 78%;
+    transform: rotate(8deg);
 }
 .otimizacoes{
-    top: 35%;
+    top: 52%;
     left: 70%;
+    transform: rotate(-12deg);
 }
 .agilidade{
-    top: 7%;
+    top: 8%;
     left: 32%;
+    transform: rotate(9deg);
 }
 .responsivo{
-    top: 11.5%;
+    top: 20%;
     left: 19%;
+    transform: rotate(10deg);
 }
 .acessibilidade{
-    top: 20%;
+    top: 30%;
     left: 28.7%;
+    transform: rotate(-8deg);
 }
 .codigo-limpo{
-    top: 28%;
+    top: 38%;
     left: 14%;
+    transform: rotate(-8deg);
 }
 .css3{
-    top: 32%;
+    top: 42%;
     left: 32%;
+    transform: rotate(10deg);
 }
 .boas-praticas{
-    top: 40%;
+    top: 55%;
     left: 22%;
+    transform: rotate(10deg);
+}
+#followme{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 15em;
+    width: 20em;
+    background-color: #FFF;
+    vertical-align: bottom;
+    transform-origin: 0 0;
+    transform: translateX(19em) translateY( -13em) rotate(45deg);
+}
+#followme:hover{
+    transform: translateX(18.5em) translateY( -12.5em) rotate(45deg);
+}
+#followme span{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    font-family: "Shadows Into Light", cursive;
+    font-weight: bold;
+    letter-spacing: 0.3ch;
 }

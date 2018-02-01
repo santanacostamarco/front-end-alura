@@ -29,6 +29,8 @@ main{
     width: 85%;
 }
 .page-header{
+    position: relative;
+    overflow: hidden;
     color: #F2FFFC;
     background-color: #320a27;
     text-align: center;
