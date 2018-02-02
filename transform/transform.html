@@ -1,0 +1,53 @@
+<style>
+.face{ 
+	position: absolute;
+	width:200px;
+	height:200px;
+	display: block;	
+	top:0;
+	left: 0;
+}
+.cubo{
+	position: relative;
+	transform-style: preserve-3d;
+	top: 25px;  
+	left: 500px;  
+	transform: rotateX(10deg) rotateY(10deg);
+	width: 300px;  
+	height: 300px;
+}
+
+.esquerda{
+	background-color: blue;
+	transform: translateX(-100px) rotateY(90deg);  
+}
+.direita{
+	background-color: green;	
+	transform: translateX(100px) rotateY(90deg);  
+}
+.cima{	
+	background-color: yellow;
+	transform: translateY(-100px) rotateX(90deg);
+}
+.baixo{
+	background-color: magenta;
+	transform: translateY(100px) rotateX(90deg);
+}
+.traz{
+	background-color: red;
+	transform: translateZ(-100px);
+}
+.frente{	
+	background-color: orange;	
+	transform: translateZ(100px);
+}
+</style>
+
+<div class="cubo">    
+	<div class="face frente">A</div>    
+	<div class="face esquerda">B</div>    
+	<div class="face direita">C</div>    
+	<div class="face cima">D</div>    
+	<div class="face baixo">E</div>    
+	<div class="face traz">F</div>
+</div>
