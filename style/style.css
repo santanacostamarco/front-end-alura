@@ -1,7 +1,13 @@
+html, body {
+    height: 100%;
+    overflow-x: hidden;
+}
 body{
     line-height: 1.5;
     font-family: "Crimson Text", serif;
     background-color: #F2FFFC;
+    perspective: 6px;
+    perspective-origin: 50% 160px;
 }
 p{
     margin: 1em 0;
@@ -30,7 +36,6 @@ main{
 }
 .page-header{
     position: relative;
-    overflow: hidden;
     color: #F2FFFC;
     background-color: #320a27;
     text-align: center;
@@ -40,6 +45,7 @@ main{
 }
 .page-header h1{
     text-transform: uppercase;
+    text-shadow: 0.1em 0.1em #000;
 }
 .img-aside, .navegacao{
     float: left;
