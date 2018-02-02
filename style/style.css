@@ -1,13 +1,7 @@
-html, body {
-    height: 100%;
-    overflow-x: hidden;
-}
 body{
     line-height: 1.5;
     font-family: "Crimson Text", serif;
     background-color: #F2FFFC;
-    perspective: 6px;
-    perspective-origin: 50% 160px;
 }
 p{
     margin: 1em 0;
@@ -96,6 +90,7 @@ main{
     position: fixed;
     bottom: 0;
     width: 100%;
+    clear: both;
 }
 .icones-sociais{
     padding: 0.75rem 0;
@@ -105,9 +100,6 @@ main{
 }
 .float-left{
     float: left;
-}
-.clearfix{
-    clear: both;
 }
 #github{
     background-image: url("../img/github.png");

@@ -8,11 +8,12 @@
     height: 230px;
     box-sizing: content-box;
     display: inline-flex;
-    background-color: #fff5f5
+    background-color: #ffffff
 }
 .box:hover{
     background-color: #ffd0d0
 }
 .portfolio-img{
     width: 100%;
+    box-shadow: 0 0 4px #000
 }
