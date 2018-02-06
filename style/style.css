@@ -74,12 +74,45 @@ main{
 }
 .social-icon{
     display: block;
+    position: relative;
     text-indent: -99999px;
     width: 40px;
     height: 40px;
 }
-.social-icon:hover::before{
+.social-icon::before{
+    content:" ";
+    position: absolute;
+    top:0;
+    left:0;
+    transform: translate(15px, 30px);
+    border-bottom: 5px solid #000;
+    border-left: 5px solid transparent;
+    border-top: 5px solid transparent;
+    border-right: 5px solid transparent;
+    display: none;
+}
+.social-icon::after{
     content: attr(data-subtitle);
+    padding: 0.4em;
+    width: 10em;;
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: white;
+    background-color: #000;
+    transform: translate(-4em, 40px);
+    z-index: 9999999;
+    text-indent: 0;
+    transition: 0.2s;
+    display: none;
+    font-family: "Open Sans Condensed", sans-serif;
+    font-size: 0.8em;
+    border-radius: 0.6em;
+}
+.social-icon:hover::after,
+.social-icon:hover::before{
+    display: block;
 }
 .navegacao h1{
     margin: 0.5rem 0;
