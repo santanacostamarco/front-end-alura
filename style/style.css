@@ -24,6 +24,10 @@ h1, h2{
 }
 a{
     color: #320a27;
+    transition: .1s;
+}
+main a:not([class]):hover, main a:not([class]):focus{
+    color: #c92e9d;
 }
 main{
     width: 85%;
@@ -68,29 +72,42 @@ main{
 .icones-sociais li{
     display: inline-block;
 }
-.icones-sociais a{
+.social-icon{
     display: block;
     text-indent: -99999px;
     width: 40px;
     height: 40px;
 }
+.social-icon:hover::before{
+    content: attr(data-subtitle);
+}
 .navegacao h1{
     margin: 0.5rem 0;
     font-size: 1.75em;
 }
-.navegacao a{
+.item-nav a{
     color: inherit;
     text-decoration: none;
     font-family: "Open Sans Condensed", sans-serif;
 }
+.item-nav{
+    transition: 0.2s;
+}
+.item-nav:hover, .item-nav:focus{
+    background-color: #5c1347
+}
 .rodape-site{
-    background-color: rgba(0, 0, 0, 0.5);
+    background-image: radial-gradient(ellipse at left bottom, #320a27 50%, black 50%, black 60%, transparent 60%);
     color: #F2FFFC;
-    text-align: center;
     position: fixed;
     bottom: 0;
-    width: 100%;
     clear: both;
+    width: 18em;
+    height: 4em;
+}
+.texto-rodape{
+    position: absolute;
+    bottom: 0;
 }
 .icones-sociais{
     padding: 0.75rem 0;
@@ -101,12 +118,12 @@ main{
 .float-left{
     float: left;
 }
-#github{
+.github{
     background-image: url("../img/github.png");
 }
-#twitter{
+.twitter{
     background-image: url("../img/twitter.png");
 }
-#linkedin{
+.linkedin{
     background-image: url("../img/linkedin.png");
 }

@@ -76,14 +76,12 @@
 <script type="text/javascript">
 	var vertical = document.getElementById("vertical");
 	var horizontal = document.getElementById("horizontal");
-	
 	vertical.addEventListener("change", function(){
 		document.getElementById("cubo").style.transform = "rotateX("+ horizontal.value +"deg) rotateY("+ this.value +"deg)"	
 	});
 	horizontal.addEventListener("change", function(){
 		document.getElementById("cubo").style.transform = "rotateX("+ this.value +"deg) rotateY("+ vertical.value +"deg)"			
 	});
-
 	i=-360;
 		setInterval(function(){
 			document.getElementById("cubo").style.transform = "rotateX("+ i +"deg) rotateY("+ i +"deg)"	
@@ -93,9 +91,7 @@
 			else{
 				i = -360;
 			}
-			
 		},100);
-	
 
 </script>
 
