@@ -10,7 +10,13 @@ fieldset legend{
 }
 .form-label{
     display: block;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    font-family:    'Lucida Sans', 
+                    'Lucida Sans Regular', 
+                    'Lucida Grande', 
+                    'Lucida Sans Unicode', 
+                    Geneva, 
+                    Verdana, 
+                    sans-serif
 }
 .form-text{
     border: 0.01em solid #320a27;

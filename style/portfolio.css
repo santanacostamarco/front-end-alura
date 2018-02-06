@@ -1,18 +1,23 @@
 /* página portfólio */
+
+
+.meus-trabalhos{
+    display: flex;
+    flex-wrap: wrap;
+}
 .box{
-    margin-left: 0.2em;
-    margin-bottom: 0.4em;
-    padding: 10px;
-    border: 0.2em solid #320a27;
-    width: 40%;
-    height: 230px;
-    box-sizing: content-box;
-    display: inline-flex;
-    background-color: #ffffff;
+    flex: 1 1 40%;
+    box-sizing: border-box;
+    padding: 0.5em;
+    margin:0.5em;
+    border: .1em solid #3C1D3D;
     transition: .2s;
 }
+.meus-trabalhos .box:first-child{
+    flex-basis: 100%;
+}
 .box:hover{
-    background-color: #ffd0d0
+    transform: scale(1.01);
 }
 .portfolio-img{
     width: 100%;

@@ -5,6 +5,7 @@ html, body {
 body {
     perspective: 6px;
     perspective-origin: 50% 160px;
+    display: block;
 }
 .foto-home {
     height: 200px;
@@ -97,9 +98,9 @@ body {
     border: 0.5em solid black;
     margin: 2em 0;
 }
-.trabalhos li {
-    float: left;
-    width: 33.333%;
+.item-trabalhos {
+    display: flex;
+    flex: 1;
 }
 .trabalhos img {
     width: 100%;

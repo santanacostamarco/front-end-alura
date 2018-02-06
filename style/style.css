@@ -50,14 +50,13 @@ main{
     box-sizing: border-box;
     border-bottom: 0.3rem solid #000;
     border-right: 0.3rem solid #000;
-    position: fixed;
 }
 .img-aside{
     width: 250px;
     top:0;
 }
 .navegacao{
-    top: 250px;
+    padding-top: calc(250px + 1em);
     color: #F2FFFC;
     background-color: #320a27;
     text-align: center;
@@ -130,7 +129,11 @@ main{
     background-color: #5c1347
 }
 .rodape-site{
-    background-image: radial-gradient(ellipse at left bottom, #320a27 50%, black 50%, black 60%, transparent 60%);
+    background-image: radial-gradient(  ellipse at left bottom, 
+                                        #320a27 50%,   
+                                        black 50%, 
+                                        black 60%, 
+                                        transparent 60%);
     color: #F2FFFC;
     position: fixed;
     bottom: 0;
