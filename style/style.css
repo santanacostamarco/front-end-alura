@@ -50,7 +50,6 @@ main{
     box-sizing: border-box;
     border-bottom: 0.3rem solid #000;
     border-right: 0.3rem solid #000;
-    width: 15%;
     position: fixed;
 }
 .img-aside{
@@ -62,6 +61,7 @@ main{
     color: #F2FFFC;
     background-color: #320a27;
     text-align: center;
+    width: calc(250px * .9);
 }
 .container{
     width: 720px;

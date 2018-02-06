@@ -1,0 +1,87 @@
+fieldset{
+    margin: 1em 0;
+}
+fieldset legend{
+    font-family: "Open Sans Condensed", sans-serif;
+    color: #320a27;
+    border-bottom: 1px solid #320a27;
+    width: 100%;
+    margin-bottom: .5em;
+}
+.form-label{
+    display: block;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+.form-text{
+    border: 0.01em solid #320a27;
+    height: 2em;
+    background-color: transparent;
+    margin-bottom: 1em;
+    transition: .2s;
+    padding-left: 5px; 
+}
+.form-radio[value="other"] ~ input{
+    display: none;
+}
+.form-radio[value="other"]:checked ~ input{
+    display: initial;
+}
+label[for="input-name"],
+label[for="input-email"]{
+    position: relative;
+}
+label[for="input-name"]::after,
+label[for="input-email"]::after{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    content:"";
+    display: block;
+    width: 2em;
+    height: 2em;
+    background-size: 50% 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #320a27;
+}
+label[for="input-name"]::after{
+    background-image: url(../img/usuario.png);
+}
+label[for="input-email"]::after{
+    background-image: url(../img/email.png);
+}
+#input-name,
+#input-email{
+    position: relative;
+    left: 2.45em;
+}
+.form-textarea{
+    border: 0.01em solid #320a27;
+    background-color: transparent;
+    margin-bottom: 1em;
+    transition: .2s;
+}
+.form-text:hover::placeholder,
+.form-text:focus::placeholder,
+.form-textarea:hover::placeholder,
+.form-textarea:focus::placeholder{
+    font-style: italic;
+}
+.form-submit{
+    padding: 0.5em 2em;
+    background-color: #320a27;
+    border: 0.01em solid #320a27;
+    font-family: "Open Sans Condensed", sans-serif;
+    color: aliceblue; 
+    float: right;
+    margin-bottom: 1em;
+    transition: .2s
+}
+.form-submit:hover,
+.form-submit:focus{
+    background-color: #5c1347;
+    border-color: #5c1347;
+    transform: scale(1.1);
+}
+
+

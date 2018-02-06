@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>
+            Contato - Samuel L. Jackson
+        </title>
+        <link rel="icon" href="img/favicon.png">
+        <link rel="stylesheet" href="style/reset.css">
+        <link rel="stylesheet" href="style/style.css">
+        <link rel="stylesheet" href="style/contato.css">
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700">
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Crimson+Text:400,400italic,600">
+    </head>
+    <body>
+        <header class="page-header">
+            <h1>Contato</h1>
+        </header>
+        <main class="float-right">
+            <div class="container">
+                <form class="contact-form">
+                    <fieldset class="form-fieldset">
+                        <legend>Dados Pessoais</legend>
+                        <label for="input-name" class="form-label">Nome</label>
+                        <input type="text" class="form-text" id="input-name" pattern="[A-Za-z']{4,}" title="deve conter pelo menos 4 caracteres" placeholder="digite seu nome" autofocus required>
+                        <label for="input-email" class="form-label">Email</label>
+                        <input type="email" class="form-text" id="input-email" placeholder="seu@email.com" required>
+                    </fieldset>
+
+                    <fieldset class="form-fieldset">
+                        <legend>Assunto</legend>
+                        <label class="form-label">
+                            <input type="radio" name="assunto" class="form-radio" value="blog" required> Blog
+                        </label>
+                        <label class="form-label">
+                            <input type="radio" name="assunto" class="form-radio" value="services" required> Serviços
+                        </label>
+                        <label class="form-label">
+                            <input type="radio" name="assunto" class="form-radio" value="other" required> Outro
+                            <input type="text" name="assunto-outro" class="form-text" placeholder="outro assunto?">
+                        </label>
+                    </fieldset>
+
+                    <fieldset class="form-fieldset">
+                        <legend>Mensagem</legend>
+                        <label class="form-label"> Em que posso ajudar?</label>
+                        <textarea class="form-textarea" placeholder="sua mensagem aqui" rows="8" cols="60" required></textarea>
+                    </fieldset>
+
+                    <button type="submit" class="form-submit">Enviar mensagem</button>
+                </form>
+            </div>
+            </main>
+            <img src="img/eu.jpg" alt="foto de Samuel L. Jackson" class="img-aside">
+            <aside class="navegacao">
+                <h1>Samuel L.<br>Jackson</h1>
+                <nav>
+                    <ul>
+                        <li class="item-nav"><a href="index.html">Home</a></li>
+                        <li class="item-nav"><a href="portfolio.html">Portfolio</a></li>
+                        <li class="item-nav"><a href="bio.html">Sobre mim</a></li>
+                        <li class="item-nav"><a href="blog.html">Blog</a></li>
+                        <li class="item-nav"><a href="contato.html">Contato</a></li>
+                    </ul>
+                    <ul class="icones-sociais">
+                        <li> <a class="social-icon github" data-subtitle="Veja minhas contribuições" href="https://github.com"> GitHub </a> </li>
+                        <li> <a class="social-icon twitter" data-subtitle="Me siga no Twitter" href="https://twitter.com"> Twitter </a> </li>
+                        <li> <a class="social-icon linkedin" data-subtitle="Me siga no LinkedIn" href="https://linkedin.com"> LinkedIn </a> </li>
+                    </ul>
+                </nav>
+            </aside>
+            <footer class="rodape-site">
+                <span class="texto-rodape">&copy; Samuel L. Jackson 2018</span>
+            </footer>
+        </body>
+    </html>

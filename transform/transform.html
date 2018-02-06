@@ -16,6 +16,16 @@
 	transform: rotateX(10deg) rotateY(10deg);
 	width: 300px;  
 	height: 300px;
+	animation: girar 10s infinite;
+	animation-timing-function: linear;
+}
+@keyframes girar{
+	from{
+		transform: rotateX(-360deg) rotateY(-360deg);
+	}
+	to{
+		transform: rotateX(360deg) rotateY(360deg);
+	}
 }
 
 .esquerda{
@@ -74,6 +84,7 @@
 	<div class="face traz"></div>
 </div>
 <script type="text/javascript">
+/*
 	var vertical = document.getElementById("vertical");
 	var horizontal = document.getElementById("horizontal");
 	vertical.addEventListener("change", function(){
@@ -92,6 +103,6 @@
 				i = -360;
 			}
 		},100);
-
+*/
 </script>
 

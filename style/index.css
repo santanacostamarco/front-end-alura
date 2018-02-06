@@ -37,6 +37,20 @@ body {
     font-size: 3em;
     display: inline-block;
     transform: rotate(-6deg) skew(-14deg);
+    animation: floating 1s infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+}
+@keyframes floating{
+    from{
+        transform: translateY(10px) rotate(-6deg) skew(-10deg);
+    }
+    to{
+        transform: translateY(-10px) rotate(-6deg) skew(-10deg);
+    }
+}
+.saudacao em:hover{
+    animation-play-state: paused;
 }
 .botao-index {
     text-transform: uppercase;
@@ -52,6 +66,7 @@ body {
 }
 .botao-index:hover{
     background-color: #631534;
+    transform: scale(1.05);
 }
 .secao-inicio{
     padding: 2em 15%;
@@ -119,18 +134,20 @@ body {
     background-color: #fff;
     color: #000;
     height: 6em;
-    padding: 1.3em;
+    box-sizing: border-box;
     font-size: 1.1em;
     position: absolute;
     top: 4.3em;
-    width: 45%;
+    width: 0;
     left: 35%;
-    display: none;
     transition: 0.2s;
+    overflow: hidden;
+    height: 8.5em;
 }
 .link-to-post:hover + .inicio-post,
 .link-to-post:focus + .inicio-post{
-    display: block;
+    width: 45%;
+    padding: 1em 0 0 1em;
 }
 .link-to-post:hover,
 .link-to-post:focus{
@@ -168,6 +185,13 @@ main {
     letter-spacing: 0.2ch;
     color: rgba(255, 255, 255, 0.8);
     font-size: 400%;
+    animation: words-explode 0.6s ease;
+}
+@keyframes words-explode{
+    0%{
+        opacity: 0;
+        transform: translateZ(-80px);
+    }
 }
 .eficiencia {
     top: 50%;
@@ -254,8 +278,21 @@ main {
     background-color: #FFF;
     vertical-align: bottom;
     transform-origin: 0 0;
-    transform: translateX(19em) translateY( -13em) rotate(45deg);
+    transform: translateX(29em) translateY( -23em) rotate(45deg);
     transition: .2s;
+    animation: twitter-show-up .5s forwards;
+    animation-delay: 0.8s;
+    opacity: 0;
+}
+@keyframes twitter-show-up{
+    from{
+        transform: translateX(29em) translateY( -23em) rotate(45deg);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(19em) translateY( -13em) rotate(45deg);
+        opacity: 1;
+    }
 }
 .followme:hover,
 .followme:focus{
