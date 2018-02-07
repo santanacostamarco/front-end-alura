@@ -7,6 +7,10 @@ body {
     perspective-origin: 50% 160px;
     display: block;
 }
+.page-header{
+    position: relative;
+    width: 100%;
+}
 .foto-home {
     height: 200px;
     z-index: 100;
@@ -94,13 +98,28 @@ body {
     color: #FFF;
 }
 .trabalhos ul {
-    overflow: hidden;
-    border: 0.5em solid black;
     margin: 2em 0;
+    display: flex;
+    flex-wrap: flex:
 }
 .item-trabalhos {
-    display: flex;
     flex: 1;
+    border: 0.5em solid black;
+    border-collapse: collapse;
+    transition: .4s;
+}
+.item-trabalhos:hover{
+    transform: scale(1.2);
+    z-index: 100;
+}
+.item-trabalhos:first-child{
+    order: 2;
+}
+.item-trabalhos:nth-child(2){
+    order:1;
+}
+.item-trabalhos:last-child{
+    order: 6;
 }
 .trabalhos img {
     width: 100%;
@@ -186,10 +205,10 @@ main {
     letter-spacing: 0.2ch;
     color: rgba(255, 255, 255, 0.8);
     font-size: 400%;
-    animation: words-explode 0.6s ease;
+    animation: words-explode 0.6s forwards;
 }
 @keyframes words-explode{
-    0%{
+    from{
         opacity: 0;
         transform: translateZ(-80px);
     }
@@ -291,14 +310,16 @@ main {
         opacity: 0;
     }
     to{
-        transform: translateX(19em) translateY( -13em) rotate(45deg);
+        transform: translateX(15em) translateY( -13em) rotate(45deg);
         opacity: 1;
     }
 }
+/*
 .followme:hover,
 .followme:focus{
     transform: translateX(18.5em) translateY( -12.5em) rotate(45deg);
 }
+*/
 .followme span{
     position: absolute;
     bottom: 0;
